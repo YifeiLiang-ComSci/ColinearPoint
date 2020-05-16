@@ -8,8 +8,9 @@
  *
  ******************************************************************************/
 
-import java.util.Comparator;
 import edu.princeton.cs.algs4.StdDraw;
+
+import java.util.Comparator;
 
 public class Point implements Comparable<Point> {
 
@@ -24,6 +25,7 @@ public class Point implements Comparable<Point> {
      */
     public Point(int x, int y) {
         /* DO NOT MODIFY */
+
         this.x = x;
         this.y = y;
     }
@@ -60,6 +62,20 @@ public class Point implements Comparable<Point> {
      */
     public double slopeTo(Point that) {
         /* YOUR CODE HERE */
+        if (x == that.x && y == that.y)
+        {
+            return Double.NEGATIVE_INFINITY;
+        }
+        if(x == that.x && y != that.y)
+        {
+            return Double.POSITIVE_INFINITY;
+        }
+        double slope = (that.y - y)/(double) (that.x - x);
+        if (slope == 0)
+        {
+            slope = +0.0;
+        }
+        return slope;
     }
 
     /**
@@ -76,6 +92,15 @@ public class Point implements Comparable<Point> {
      */
     public int compareTo(Point that) {
         /* YOUR CODE HERE */
+        if (x == that.x && y == that.y)
+        {
+            return 0;
+        } else if (that.y > y || that.y == y && x < that.x)
+        {
+            return -1;
+        } else {
+            return 1;
+        }
     }
 
     /**
@@ -86,6 +111,22 @@ public class Point implements Comparable<Point> {
      */
     public Comparator<Point> slopeOrder() {
         /* YOUR CODE HERE */
+        return new Comparator<Point>() {
+            @Override
+            public int compare(Point a, Point b) {
+
+                if (slopeTo(a) > slopeTo(b))
+                {
+                    return 1;
+                } else if(slopeTo(a) < slopeTo(b))
+                {
+                    return -1;
+                } else {
+                    return 0;
+                }
+
+            }
+        };
     }
 
 
@@ -101,10 +142,12 @@ public class Point implements Comparable<Point> {
         return "(" + x + ", " + y + ")";
     }
 
+
     /**
      * Unit tests the Point data type.
      */
     public static void main(String[] args) {
+
         /* YOUR CODE HERE */
     }
 }
