@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/BruteCollinearPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/BruteCollinearPoints.java" afterDir="false" />
-    </list>
+    <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +65,7 @@
     <configuration name="FastCollinearPoints" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FastCollinearPoints" />
       <module name="Algorithms, Part I" />
-      <option name="PROGRAM_PARAMETERS" value="input40.txt" />
+      <option name="PROGRAM_PARAMETERS" value="rs1423.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589556721702</updated>
-      <workItem from="1589556726378" duration="27630000" />
+      <workItem from="1589556726378" duration="27992000" />
     </task>
     <servers />
   </component>
@@ -120,10 +118,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="278" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589650403510">
-      <screen x="0" y="23" width="1402" height="877" />
+    <state x="278" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589657896827">
+      <screen x="0" y="23" width="1401" height="877" />
     </state>
-    <state x="278" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1401.877@0.23.1401.877" timestamp="1589570355931" />
+    <state x="278" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1401.877@0.23.1401.877" timestamp="1589657896827" />
     <state x="278" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1402.877@0.23.1402.877" timestamp="1589650403510" />
     <state x="278" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1403.877@0.23.1403.877" timestamp="1589649601317" />
     <state x="601" y="209" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1589638944365">
