@@ -24,6 +24,7 @@ public class BruteCollinearPoints
         {
             throw new IllegalArgumentException();
         }
+        //sd
         for(int i = 0 ; i < pointsCopy.length-1;i++)
         {
             if(pointsCopy[i].compareTo(pointsCopy[i+1]) == 0) {
