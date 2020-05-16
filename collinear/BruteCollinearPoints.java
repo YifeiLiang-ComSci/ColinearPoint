@@ -1,5 +1,6 @@
+import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdDraw;
-import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -82,23 +83,17 @@ public class BruteCollinearPoints
     }
     public static void main(String args[])
     {
-        int num = Integer.parseInt(StdIn.readLine());
+        In in = new In(args[0]);
 
-        Point[] points = new Point[num];
-        int index=0;
-        while(!StdIn.isEmpty())
-        {
-            String str = StdIn.readLine();
-
-            str = str.trim();
-
-            String ints[] = str.split("\\s+");
-
-            points[index] = new Point(Integer.parseInt(ints[0]),Integer.parseInt(ints[1]));
-            index++;
+        int n = in.readInt();
+        Point[] points = new Point[n];
+        for (int i = 0; i < n; i++) {
+            int x = in.readInt();
+            int y = in.readInt();
+            points[i] = new Point(x, y);
         }
 
-        BruteCollinearPoints bp = new BruteCollinearPoints(points);
+        // draw the points
         StdDraw.enableDoubleBuffering();
         StdDraw.setXscale(0, 32768);
         StdDraw.setYscale(0, 32768);
@@ -108,9 +103,9 @@ public class BruteCollinearPoints
         StdDraw.show();
 
         // print and draw the line segments
-        BruteCollinearPoints collinear = new BruteCollinearPoints(points);
+        FastCollinearPoints collinear = new FastCollinearPoints(points);
         for (LineSegment segment : collinear.segments()) {
-            //StdOut.println(segment);
+            StdOut.println(segment);
             segment.draw();
         }
         StdDraw.show();
